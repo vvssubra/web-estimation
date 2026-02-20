@@ -254,19 +254,19 @@ export const Calculator: React.FC = () => {
     <div className="max-w-7xl mx-auto px-6 py-8">
       {/* Top Header */}
       <div className="text-center mb-10">
-        <div className="inline-block px-4 py-1.5 bg-slate-900 text-white rounded-full text-xs font-black tracking-widest mb-4 uppercase">
+        <div className="inline-block px-4 py-1.5 bg-cyan-400/20 border border-cyan-300/30 text-cyan-100 rounded-full text-xs font-black tracking-widest mb-4 uppercase backdrop-blur">
           {APP_NAME}
         </div>
-        <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+        <h1 className="text-4xl md:text-5xl font-black text-slate-100 tracking-tight drop-shadow-[0_0_22px_rgba(56,189,248,0.35)]">
           Malaysia Web Design Price Calculator
         </h1>
-        <p className="text-slate-400 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
+        <p className="text-slate-300 mt-4 max-w-2xl mx-auto text-sm leading-relaxed">
           Get instant, accurate website cost estimates based on current market rates for service businesses, eCommerce, and more.
         </p>
       </div>
 
       {/* Progress Tabs */}
-      <div className="bg-white rounded-2xl shadow-sm mb-10 overflow-hidden border border-slate-100">
+      <div className="bg-slate-900/50 rounded-2xl shadow-sm mb-10 overflow-hidden border border-cyan-500/20 backdrop-blur-xl">
         <div className="grid grid-cols-5 text-center text-[10px] md:text-xs font-bold uppercase tracking-widest border-b border-slate-50">
           {STEPS.map((s, idx) => (
             <div key={s} className={`py-6 px-2 transition-all ${currentStep === idx ? 'step-active text-cyan-600' : 'text-slate-300'}`}>

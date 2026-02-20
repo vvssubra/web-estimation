@@ -9,14 +9,11 @@
     <style>
       body {
         font-family: 'Plus Jakarta Sans', sans-serif;
+        background: radial-gradient(circle at 15% 10%, rgba(34, 211, 238, 0.25), transparent 30%), radial-gradient(circle at 85% 25%, rgba(99, 102, 241, 0.25), transparent 28%), #020617;
       }
       .step-active {
         color: #06b6d4; /* Neon Blue (Cyan 500) */
         border-bottom: 3px solid #06b6d4;
-      }
-      .glass-card {
-        background: rgba(255, 255, 255, 0.8);
-        backdrop-filter: blur(10px);
       }
       input[type=range]::-webkit-slider-thumb {
         background: #06b6d4;
@@ -33,11 +30,9 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
-  <body class="bg-slate-50 text-slate-900">
+  <body class="text-slate-100">
     <div id="root"></div>
-    <script type="module" src="./index.tsx"></script>
-  <script type="module" src="/index.tsx"></script>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>
